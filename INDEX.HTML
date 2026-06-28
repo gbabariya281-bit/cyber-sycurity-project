@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Password Security Checker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>🔐 Password Security Checker</h1>
+
+<p class="subtitle">
+Check your password strength and generate secure passwords.
+</p>
+
+<div class="input-group">
+
+<label>Password</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Enter your password">
+
+<button id="togglePassword">
+👁
+</button>
+
+</div>
+
+</div>
+
+<div class="strength-bar">
+
+<div id="strengthFill"></div>
+
+</div>
+
+<p id="strengthText">
+
+Password Strength
+
+</p>
+
+<button id="checkBtn">
+
+Check Password
+
+</button>
+
+<hr>
+
+<h2>Password Generator</h2>
+
+<input
+type="text"
+id="generatedPassword"
+placeholder="Generated Password"
+readonly>
+
+<button id="generateBtn">
+
+Generate Password
+
+</button>
+
+<button id="copyBtn">
+
+Copy Password
+
+</button>
+
+<hr>
+
+<h2>Password Tips</h2>
+
+<ul>
+
+<li>✔ Minimum 8 Characters</li>
+
+<li>✔ Use Uppercase Letters</li>
+
+<li>✔ Use Lowercase Letters</li>
+
+<li>✔ Use Numbers</li>
+
+<li>✔ Use Special Characters</li>
+
+<li>✔ Avoid Personal Information</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

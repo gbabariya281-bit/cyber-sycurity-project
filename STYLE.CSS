@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:450px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.password-box{
+    display:flex;
+}
+
+.password-box input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ccc;
+    border-radius:8px 0 0 8px;
+    outline:none;
+    font-size:16px;
+}
+
+.password-box button{
+    width:60px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    border-radius:0 8px 8px 0;
+}
+
+.strength-bar{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+#strengthFill{
+    width:0%;
+    height:100%;
+    background:red;
+    transition:0.4s;
+}
+
+#strengthText{
+    text-align:center;
+    margin:15px 0;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+input[type=text]{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:2px solid #ccc;
+    border-radius:8px;
+}
+
+h2{
+    margin:20px 0 10px;
+    text-align:center;
+}
+
+ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+@media(max-width:500px){
+.card{
+width:100%;
+}
+}
+
+
+#generatedPassword{
+    background:#f8fafc;
+    color:#111827;
+    font-weight:600;
+}
+
+
+
+#generateBtn{
+    background:#ea580c;
+}
+
+#generateBtn:hover{
+    background:#c2410c;
+}
+
+
+
+#copyBtn{
+    background:#16a34a;
+}
+
+#copyBtn:hover{
+    background:#15803d;
+}
+
+
+
+#checkBtn{
+    background:#2563eb;
+}
+
+#checkBtn:hover{
+    background:#1d4ed8;
+}
+
+
+
+ul{
+    list-style:none;
+    margin-top:15px;
+}
+
+ul li{
+    padding:10px;
+    margin-bottom:10px;
+    background:#f1f5f9;
+    border-left:5px solid #2563eb;
+    border-radius:8px;
+    color:#334155;
+    font-size:15px;
+}
+
+
+
+.card{
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+input:focus{
+border-color:#2563eb;
+box-shadow:0 0 8px rgba(37,99,235,.3);
+}
+
+
+
+.footer{
+text-align:center;
+margin-top:20px;
+font-size:14px;
+color:#64748b;
+}
+
+
+
+@media(max-width:768px){
+
+.card{
+
+width:95%;
+padding:20px;
+
+}
+
+h1{
+
+font-size:26px;
+
+}
+
+button{
+
+font-size:15px;
+
+}
+
+input{
+
+font-size:15px;
+
+}
+
+}
